@@ -1,9 +1,12 @@
 import chokidar from 'chokidar';
-import fs from 'fs/promises';
+
 import fileModel from '../models/fileModel.js';
 
 // Путь к папке с логами
 const logsDir = './../logs';
+
+
+
 
 // Проверяем, существует ли папка логов, создаём её, если нет
 // if (!fs.existsSync(logsDir)) {
@@ -12,6 +15,8 @@ const logsDir = './../logs';
 // }
 
 // Настраиваем наблюдатель
+
+
 
 const startFileWatcher = (filePath) => {
     console.log(filePath)

@@ -77,8 +77,8 @@ class FilesModel {
 
             return lastFile
         } catch (error) {
-            console.error('Ошибка при поиске последнего файла:', err);
-            throw err;
+            console.error('Ошибка при поиске последнего файла:', error);
+            throw error;
         }
     }
 
